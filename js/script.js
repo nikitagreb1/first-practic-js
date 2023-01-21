@@ -14,9 +14,9 @@ const personalMovieDB = {
     privat: false
 };
 
-const lastFilm = prompt('Один из последних просмотренных фильмов?', '');
-const ratingLastFilm = +prompt('На сколько оцените его?', '');
+const lastFilm = prompt('Один из последних просмотренных фильмов?', ''),
+        ratingLastFilm = +prompt('На сколько оцените его?', '');
 
-personalMovieDB['movies'] = lastFilm;
+personalMovieDB['movies'] = `${lastFilm}, ${ratingLastFilm}`;
 
 console.log(personalMovieDB);
